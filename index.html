@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Converter Projects: professional overview of buck and boost converter design, operation, and applications."
+    />
+    <title>Converter Projects | Buck & Boost Converters</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="buck.html">Buck</a></li>
+                    <li><a href="boost.html">Boost</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero">
+                <h1>Converter Projects</h1>
+                <p class="subtitle">
+                    Practical design and analysis of buck and boost DC-DC converters for modern electrical systems.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="overview" class="section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    This project presents two essential DC-DC converter topologies: buck and boost converters.
+                    These circuits are widely used to step voltage down or up with high efficiency and stable output performance.
+                </p>
+            </div>
+        </section>
+
+        <section id="buck-converter" class="section featured-section">
+            <div class="container content-grid">
+                <article class="text-content">
+                    <h2>Buck Converter</h2>
+                    <p>
+                        A buck converter steps down input voltage to a lower regulated output using a switch, inductor,
+                        diode (or synchronous rectifier), and capacitor.
+                    </p>
+                    <ul>
+                        <li><strong>High efficiency:</strong> Lower power dissipation than linear regulation.</li>
+                        <li><strong>Stable regulation:</strong> Reliable output under varying input/load conditions.</li>
+                        <li><strong>Low-voltage rails:</strong> Commonly converts 12V/24V to 5V or 3.3V.</li>
+                        <li><strong>Compact thermal profile:</strong> Reduced heat and cooling requirements.</li>
+                        <li><strong>Industry usage:</strong> Consumer electronics, automotive, and embedded systems.</li>
+                    </ul>
+                    <p>
+                        <a class="btn" href="buck.html" aria-label="View Buck Converter project details">
+                            View Buck Converter Project
+                        </a>
+                    </p>
+                </article>
+
+                <figure class="image-content">
+                    <img src="buck_converter_diagram.png" alt="Buck converter circuit diagram" loading="lazy" />
+                </figure>
+            </div>
+        </section>
+
+        <section id="boost-converter" class="section">
+            <div class="container content-grid">
+                <article class="text-content">
+                    <h2>Boost Converter</h2>
+                    <p>
+                        A boost converter steps up input voltage to a higher output level, making it ideal when source voltage
+                        is below load requirements.
+                    </p>
+                    <ul>
+                        <li><strong>Voltage step-up:</strong> Raises low battery or source voltage efficiently.</li>
+                        <li><strong>Battery systems:</strong> Maintains useful output as battery voltage declines.</li>
+                        <li><strong>Higher-voltage loads:</strong> Supports LEDs, displays, motors, and communication modules.</li>
+                        <li><strong>Energy applications:</strong> Common in solar and energy-harvesting designs.</li>
+                        <li><strong>Flexible integration:</strong> Fits mixed-voltage architectures.</li>
+                    </ul>
+                    <p>
+                        <a class="btn" href="boost.html" aria-label="View Boost Converter project details">
+                            View Boost Converter Project
+                        </a>
+                    </p>
+                </article>
+
+                <figure class="image-content">
+                    <img src="boost_converter_diagram.png" alt="Boost converter circuit diagram" loading="lazy" />
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p style="text-align: center;">&copy; 2026 Converter Projects. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

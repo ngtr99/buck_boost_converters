@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="In-depth analysis of buck converter design, operation, and applications in modern electrical systems."
+    />
+    <title>Converter Projects | Buck Converter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>    
+        <div class="container">
+            <nav class="site-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="buck.html">Buck</a></li>
+                    <li><a href="boost.html">Boost</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1>Buck Converter</h1>
+                <p class="subtitle">
+                    Comprehensive exploration of buck converter principles, design considerations, and real-world applications.
+                </p>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main id="main-content">
+        <section id="buck-converter" class="section">
+             <div class="container content-grid">
+                <h2>Introduction to Buck Converters</h2>
+                    <p>A buck converter is a type of DC-DC converter that steps down voltage from a higher level to a lower level. It is widely used in power supply applications where efficient voltage reduction is required.    </p>
+            
+                <h2>Power Stage Components</h2>
+                <ul>
+                    <li><strong>ESP32:</strong> The microcontroller that manages the switching operations and controls the converter's behavior.</li>
+                    <li><strong>PN2222:</strong> A bipolar junction transistor used for switching applications.</li>
+                    <li><strong>MOSFET FQP27P06:</strong> A power MOSFET used for switching applications.</li>
+                    <li><strong>Diode 1N5819:</strong> A fast-recovery diode used for rectification and protection.</li>
+                    <li><strong>Inductor:</strong> A passive component that stores energy in a magnetic field when electric current flows through it.</li>
+                    <li><strong>Capacitor:</strong> A passive component that stores energy in an electric field, used for filtering and energy storage in the converter.</li>
+                    <li><strong>Resistors:</strong> Used for current sensing, voltage division, and other circuit functions.</li>
+                </ul>
+
+                <h2>How to Build a Buck Converter</h2>
+                <p>
+                    Building a buck converter involves several steps, from component selection to assembly and testing. This guide provides a step-by-step approach to constructing a functional buck converter.
+                </p>
+                <img src="buck_diagram.png" alt="Buck converter diagram" loading="lazy" />
+                <ul>
+                    <li><strong>1. Design the Circuit:</strong> Start by designing the buck converter circuit, including the power stage and control circuitry. Use simulation tools to verify the design before physical assembly</li>
+                    <li><strong>2. Select Components:</strong> Choose the appropriate components based on the design requirements, such as voltage and current ratings, switching frequency, and efficiency targets.</li>
+                    <li><strong>3. Assemble the Circuit:</strong> Carefully assemble the components on a breadboard or PCB, following the circuit design. Ensure proper connections and soldering to avoid issues during testing.</li>
+                    <li><strong>4. Test the Converter:</strong> Power up the circuit and measure the output voltage and current to verify that the buck converter is functioning correctly. Adjust component values as needed to achieve the desired performance.</li>
+                    <img src="real_buck_diagram.png" alt="Real-world buck converter diagram" loading="lazy" />
+                </ul>
+                
+                <h2>How It Works</h2>
+                <p>
+                    The buck converter operates by rapidly switching the input voltage on and off, controlling the energy transferred to the output through an inductor and capacitor. When the switch is closed, current flows through the inductor, storing energy in its magnetic field. When the switch opens, the inductor releases this energy to the output, maintaining a stable voltage while stepping down from a higher input voltage. The diode provides a path for the inductor current when the switch is open, ensuring continuous current flow and preventing voltage spikes. The control circuitry, managed by the ESP32, regulates the switching frequency and duty cycle to maintain the desired output voltage under varying load conditions.
+                    <img src="buck_graph.png" alt="Performance graph of the buck converter" loading="lazy" />
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>
